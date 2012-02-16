@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com/XSD/bbcodes.xsd">
+	<import>
+		<bbcode name="aiondb">
+			<classname>AionDatabaseBBCode</classname>
+			<allowedchildren>none</allowedchildren>
+			<wysiwyg>0</wysiwyg>
+			<wysiwygicon>AionDatabaseBBCode.png</wysiwygicon>
+			<attributes>
+				<attribute name="0">
+					<required>0</required>
+				</attribute>
+			</attributes>
+			<sourcecode>1</sourcecode>
+		</bbcode>
+	</import>
+</data>

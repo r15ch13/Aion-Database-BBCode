@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<language languagecode="de-informal" xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com/XSD/language.xsd">
+	<category name="wcf.bbcode">
+		<item name="wcf.bbcode.aiondb.title"><![CDATA[F&uuml;ge Item- & Spelllinks von Aiondatabase.com ein]]></item>
+		<item name="wcf.bbcode.aiondb.suffix"><![CDATA[de]]></item>
+	</category>
+</language>
