@@ -6,6 +6,21 @@ Usage
 ------------------
 Use my [Buildscript](https://github.com/r15ch13/WCF-WBB-Package-Builder) to generate the installable package.
 
+Copy the link to an item of Aiondatabase.com and add it to your forum to make the tooltip show up.
+
+Use the following parameters to adjust the presentation:
+
+    text = Displays only the item name
+    small = Displays a small icon
+    medium = Displays a medium icon
+    large = Displays a large icon
+
+
+The tooltip adapts to the language of the copied links:
+
+    http://de.aiondatabase.com/item/100900189 = Displays a german tooltip
+    http://fr.aiondatabase.com/item/100900189 = Displays a frech tooltip
+
 License
 ----------
 Copyright 2012 Richard 'r15ch13' Kuhnt
