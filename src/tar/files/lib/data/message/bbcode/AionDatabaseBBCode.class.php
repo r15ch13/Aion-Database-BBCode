@@ -35,7 +35,7 @@ class AionDatabaseBBCode implements BBCode
 		if (!empty($content))
 		{
 			// Url ueberpruefen und benoetigte Daten extrahieren
-			if(preg_match('/http\:\/\/([a-zA-Z]{0,3})[.]{0,1}aiondatabase.com\/(item|skill|recipe|npc)\/(\d{0,10})/', StringUtil::encodeHtml($content), $data))
+			if(preg_match('/^http\:\/\/([a-zA-Z]{0,3})[.]{0,1}aiondatabase.com\/(item|skill|recipe|gathersource|npc|pet)\/([0-9]+)/', StringUtil::encodeHtml($content), $data))
 			{
 				// nur wenn es vier oder mehr Ergebnisse gibt
 				if(count($data) >= 4)
@@ -45,6 +45,12 @@ class AionDatabaseBBCode implements BBCode
 					$lang = $data[1];
 					$type = $data[2];
 					$item = $data[3];
+
+					// type ueberschreiben, da es keine aion-gathersource-* css klasse gibt
+					if($type == "gathersource" || $type == "pet") 
+					{
+						$type = "item";
+					}
 
 					// Item Groesse und Name zusammensetzen
 					$size = "aion-".$type."-full-small";
@@ -80,7 +86,7 @@ class AionDatabaseBBCode implements BBCode
 					}
 
 					// Formatieren Link zurueckgeben
-					return '<a class="'.$size.'" href="http://'. $lang .'.aiondatabase.com/'. $type .'/'. $item .'">['. $name .']</a>';
+					return '<a class="'. $size .'" href="'. $url .'">['. $name .']</a>';
 				}
 				else
 				{
