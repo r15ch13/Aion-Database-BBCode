@@ -21,6 +21,10 @@ The tooltip adapts to the language of the copied links:
     http://de.aiondatabase.com/item/100900189 = Displays a german tooltip
     http://fr.aiondatabase.com/item/100900189 = Displays a frech tooltip
 
+Example:
+
+    [aiondb=large]http://de.aiondatabase.com/item/100900189[/aiondb]
+
 License
 ----------
 Copyright 2012 Richard 'r15ch13' Kuhnt
