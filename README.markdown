@@ -19,7 +19,7 @@ Use the following parameters to adjust the presentation:
 The tooltip adapts to the language of the copied links:
 
     http://de.aiondatabase.com/item/100900189 = Displays a german tooltip
-    http://fr.aiondatabase.com/item/100900189 = Displays a frech tooltip
+    http://fr.aiondatabase.com/item/100900189 = Displays a french tooltip
 
 Example:
 
